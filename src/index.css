@@ -50,3 +50,7 @@
   font-style: normal;
   font-display: swap;
 }
+
+:root {
+  font-size: clamp(4.27px, calc(100vw / 75), 16px);
+}

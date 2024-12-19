@@ -7,9 +7,6 @@ module.exports = {
         'mv-skifer': ['MV-SKIFER', 'sans-serif'],
         'onest': ['Onest', 'sans-serif'],
       },
-      // fontSize: {
-      //   base: 'clamp(4.27px, calc(100vw / 75), 16px)',
-      // },
       colors: {
         primary: '#04061B',
       },
