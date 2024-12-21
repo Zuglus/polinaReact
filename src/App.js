@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import PortfolioSection from './components/PortfolioSection';
 import Header from './components/Header';
 import ResumeSection from './components/ResumeSection';
@@ -19,14 +20,28 @@ const App = () => {
             <ExperienceSection />
             <Footer />
 
-            {projects.map(proj => (
-                <ProjectModal
-                    key={proj.id}
-                    project={proj}
-                    isOpen={openModalId === proj.id}
-                    onClose={() => setOpenModalId(null)}
-                />
-            ))}
+            {projects.map((proj) => (
+        <CSSTransition
+          key={proj.id}
+          in={openModalId === proj.id}
+          timeout={300}
+          classNames="modal"
+          unmountOnExit
+          onEnter={() => {
+            // Блокируем скролл body при появлении:
+            document.body.style.overflow = 'hidden';
+          }}
+          onExited={() => {
+            // Возвращаем скролл после ухода модалки
+            document.body.style.overflow = '';
+          }}
+        >
+          <ProjectModal
+            project={proj}
+            onClose={() => setOpenModalId(null)}
+          />
+        </CSSTransition>
+      ))}
         </div>
     );
 }
