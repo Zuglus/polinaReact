@@ -33,10 +33,10 @@ const ResumeSection = () => {
                     <h3 className="mb-[0.84375rem] md:mb-[0.5625rem] font-medium font-onest text-[3.75rem] md:text-[2.5rem]">
                         Hard skills
                     </h3>
-                    <ul className="font-extralight text-[3.28125rem] md:text-[2.1875rem] list-none relative pl-[4.71rem] md:pl-[3.14rem]">
-                        <li className="mb-[0.75rem] md:mb-[0.1rem]">&rarr; PowerPoint</li>
-                        <li className="mb-[0.75rem] md:mb-[0.1rem]">&rarr; Figma</li>
-                        <li>&rarr; Photoshop,<br />Illustrator, InDesign</li>
+                    <ul className="font-extralight text-[3.28125rem] md:text-[2.1875rem] list-none relative">
+                        <li className="mb-[0.75rem] md:mb-[0.1rem]"><span className="-left-[4.71rem] md:-left-[3.14rem] absolute font-onest font-thin">&rarr;</span> PowerPoint</li>
+                        <li className="mb-[0.75rem] md:mb-[0.1rem]"><span className="-left-[4.71rem] md:-left-[3.14rem] absolute font-onest font-thin">&rarr;</span> Figma</li>
+                        <li><span className="-left-[4.71rem] md:-left-[3.14rem] absolute font-onest font-thin">&rarr;</span> Photoshop,<br />Illustrator, InDesign</li>
                     </ul>
                 </div>
 
@@ -44,10 +44,10 @@ const ResumeSection = () => {
                     <h3 className="mb-[0.84375rem] md:mb-[0.5625rem] font-medium font-onest text-[3.75rem] md:text-[2.5rem]">
                         Soft skills
                     </h3>
-                    <ul className="font-extralight text-[3.28125rem] md:text-[2.1875rem] list-none relative pl-[4.71rem] md:pl-[3.14rem]">
-                        <li className="mb-[0.75rem] md:mb-[0.1rem]">&rarr; Системность</li>
-                        <li className="mb-[0.75rem] md:mb-[0.1rem]">&rarr; Креативность</li>
-                        <li>&rarr; Ответственность</li>
+                    <ul className="font-extralight text-[3.28125rem] md:text-[2.1875rem] list-none relative">
+                        <li className="mb-[0.75rem] md:mb-[0.1rem]"><span className="-left-[4.71rem] md:-left-[3.14rem] absolute font-onest font-thin">&rarr;</span> Системность</li>
+                        <li className="mb-[0.75rem] md:mb-[0.1rem]"><span className="-left-[4.71rem] md:-left-[3.14rem] absolute font-onest font-thin">&rarr;</span> Креативность</li>
+                        <li><span className="-left-[4.71rem] md:-left-[3.14rem] absolute font-onest font-thin">&rarr;</span> Ответственность</li>
                     </ul>
                 </div>
             </div>
