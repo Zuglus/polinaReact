@@ -16,7 +16,7 @@ const PortfolioSection = ({ onCardClick }) => {
                 <h2 className="font-mv-skifer text-[4.6875rem] md:text-[3.125rem] leading-[1.24] tracking-[0.01em] relative z-10">Портфолио</h2>
             </div>
 
-            <div className="relative z-10 gap-[2.71875rem] md:gap-[1.8125rem] grid grid-cols-1 md:grid-cols-2 mx-auto max-w-[70.65625rem] md:max-w-[64.4375rem]">
+            <div className="relative z-10 gap-[2.71875rem] md:gap-[1.8125rem] grid grid-cols-1 md:grid-cols-2 mx-auto max-w-[70.65625rem] md:max-w-full">
                 <PortfolioCard image={niti} alt="НИТИ" onClick={() => onCardClick('project1')} />
                 <PortfolioCard image={code} alt="КОДИИМ" onClick={() => onCardClick('project2')} />
                 <PortfolioCard image={center} alt="В центре науки" onClick={() => onCardClick('project3')} />
